@@ -1,11 +1,6 @@
 # Emotion-Music-Recommendation
 Recommending music based on your facial expressions using FER 2013 dataset and Sporify api
 
-# Demo:
-![Demo](https://user-images.githubusercontent.com/51918054/123414505-9800c300-d5d1-11eb-9131-5914c255ce47.gif)
-
-(Forgive the image quality and my expressions 😆)
-
 # Project Description:
 The emotion recognition model is trained on FER 2013 dataset. It can detect 7 emotions. The project works by getting live video feed from web cam, pass it through the model to get a prediction of emotion. Then according to the emotion predicted, the app will fetch playlist of songs from Spotify through spotipy wrapper and recommend the songs by displaying them on the screen.
 
@@ -57,9 +52,6 @@ The entire project works perfectly fine. Live detection gives good frame rates d
 - index.html in 'templates' directory is the web page for the application. Basic HTML and CSS.
 - utils.py is an utility module for video streaming of web camera with threads to enable real time detection.
 - train.py is the script for image processing and training the model.
-
-# Variant:
-- Tkinter version of this app along with steps to run it is available <a href = "https://github.com/aj-naik/Emotion-Music-Recommendation/tree/tkinter">here</a>.
 
 # Issue:
 The app in current state can't be deployed on web as:
